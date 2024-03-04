@@ -12,17 +12,6 @@ html {
 body {
     background-color: #FFF;
 }
-
-        .banner {
-            max-width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 5px #555555;
-        }
-
         .imagem2 {
             position: relative;
             width: 150px;
@@ -82,7 +71,8 @@ body {
 
         .flip-card {
             background-color: transparent;
-            width: 100%;
+            width: 100%; 
+            margin: 5px;
             height: 600px;
             perspective: 1000px;
           }
@@ -140,4 +130,4 @@ body {
               margin-top: 5px;
               margin-bottom: 5px;
             }
-          
+          }
