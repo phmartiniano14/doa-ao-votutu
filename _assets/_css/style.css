@@ -7,6 +7,7 @@ html {
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 body {
@@ -22,6 +23,25 @@ body {
         .btn-copiar {
           display: inline;
           margin-top: 20px;
+        }
+
+        .btn-pulsante {
+          animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+          0% {
+              transform: scale(1);
+              opacity: 1;
+          }
+          50% {
+              transform: scale(1.1);
+              opacity: 0.7;
+          }
+          100% {
+              transform: scale(1);
+              opacity: 1;
+          }
         }
 
         .social-icons {
@@ -71,9 +91,9 @@ body {
 
         .flip-card {
             background-color: transparent;
-            width: 100%; 
+            width: 90%; 
             margin: 5px;
-            height: 600px;
+            height: 450px;
             perspective: 1000px;
           }
 
@@ -123,11 +143,128 @@ body {
           .pix {
             margin: 15px;
           }  
+          
+        .especialidades.box {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            height: 400px;
+            text-align: center;
+          }
+          
+          .especialidades.box i {
+            font-size: 2em;
+            margin-bottom: 10px;
+          }
 
-
+          .interface img {
+         
+            border-radius: 10px;
+        }
+          
+          /* Adicione estilos específicos para tamanhos de tela menores (móveis) */
+          @media only screen and (max-width: 768px) {
+            .especialidades.box {
+              width: 100%;
+            }
+          }
+        
+          
           @media (max-width: 800px) {
             .flip-card {
+              width: 100%;
               margin-top: 5px;
               margin-bottom: 5px;
             }
           }
+
+/*estilizando banner principal*/
+
+
+.topo-do-site .txt-topo-site h1 {
+  font-size: 60px;
+  color: #ff2500;
+  font-weight: bold; /* ou outras propriedades de estilo para destaque desejado */
+  align-items: center;
+  margin-top: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+ 
+}
+
+section.topo-do-site .flex{
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  gap: 90px;
+  background-image: url(../_img/quebrada.jpeg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+  z-index: -17;
+    
+}
+@media (max-width: 768px) {
+  section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.5rem + 1vw); /* Adjust font size based on viewport width */
+    gap: 50px;
+    background-image: url(../_img/quebrada.jpeg);
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-size: cover;
+    z-index: -17;
+  }
+}
+.topo-do-site .txt-topo-site h1 {
+  color: #000000;
+  font-size: 50px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+  font-size: 20px;
+  margin: 150px auto;
+}
+
+.topo-do-site .img-topo-site {
+  text-align: center;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 img.foto-h1 {
+  display: block;
+  margin: 0 auto;
+  animation: flutuar 2s ease-in-out infinite alternate ;
+  width: 200px; /* ajuste o tamanho da imagem */
+  margin-bottom: 20px; /* ajuste o espaçamento entre a imagem e o parágrafo */
+}
+
+/* Media query para telas menores (ajuste o breakpoint conforme necessário) */
+@media (max-width: 768px) {
+  .topo-do-site .txt-topo-site h1 {
+    font-size: 30px;
+  }
+
+  .topo-do-site .txt-topo-site p {
+    margin: 50px auto;
+  }
+
+  .topo-do-site .img-topo-site img {
+    max-width: 200px;
+  }
+}
+
