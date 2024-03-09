@@ -1,18 +1,30 @@
 
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;   
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    
+  
 }
 
-body {
-    background-color: #FFF;
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
 }
+body {
+  background-color: #FFF;
+    width: 100%;
+     /* Adicione esta linha para permitir a rolagem vertical quando necessário */
+    overflow-x: hidden;
+    }
+
+    .carousel-inner > .carousel-item > img {
+     height: 700px; 
+    }
+
         .imagem2 {
             position: relative;
             width: 150px;
@@ -89,11 +101,22 @@ body {
        
         }
 
+        .quem{
+          margin-top: 40px ;
+          font-size: 40px; 
+          margin: 2px;
+        }
+
+        .cards-doe{
+          margin-top: 30px ;
+          font-size: 30px;
+        }
+
         .flip-card {
             background-color: transparent;
             width: 90%; 
             margin: 5px;
-            height: 450px;
+            height: 425px;
             perspective: 1000px;
           }
 
@@ -139,7 +162,11 @@ body {
             color: white;
             transform: rotateY(180deg);
           }
-        
+          
+          .valor {
+            font-size: 20px;
+          }
+
           .pix {
             margin: 15px;
           }  
@@ -267,4 +294,17 @@ h1 img.foto-h1 {
     max-width: 200px;
   }
 }
+
+@media (max-width: 768px) {
+  
+  .carousel-inner > .carousel-item > img {
+    height: 500px; 
+   }
+   
+  .quem {
+    font-size: 30px;
+  }
+
+}
+
 
